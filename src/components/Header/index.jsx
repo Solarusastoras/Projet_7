@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import logoHeader from "./logo_kasa.svg";
+import "../../utils/CSS/style.css";
+
 
 function Header() {
   return (
@@ -9,10 +11,10 @@ function Header() {
           <img  src={logoHeader} alt="Logo de Kasa" />
         </Link>
         </div>
-      <div>
+      <nav>
       <p>Accueil</p>
-      <p>A Propos</p>
-      </div>
+      <link to="/Apropos">A Propos</link>
+      </nav>
     </div>
   );
 }

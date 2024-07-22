@@ -13,7 +13,11 @@
 @import "layouts/images";
 
 // Importation pages
+@import "pages/apparts";
+@import "pages/apropos";
 @import "pages/cards";
+@import "pages/error";
+@import "pages/home";
 
 // Importation des outils
 @import "utils/mixins";
