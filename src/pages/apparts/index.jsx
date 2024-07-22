@@ -1,12 +1,12 @@
+import React from 'react';
 import { Link } from "react-router-dom";
-import "../../utils/CSS/style.css";
 import data from "../../data/logements.json";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import Error from "../../components/Error";
-
+import Error from '../../components/Error';
+import "../../utils/CSS/style.css";
 function Appart() {
   return <div>Appart</div>;
+
+  
 }
 
 export default Appart;

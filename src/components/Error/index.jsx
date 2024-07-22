@@ -1,15 +1,16 @@
-
 import "../../utils/CSS/style.css";
-import { Link } from 'react-router-dom';
+import { useEffect } from 'react'
 
 function Error() {
-
+    useEffect(() => {
+        document.title = "Oups..."
+    })
   return (
-    <div>
-      <h1>404</h1>
-      <h2>Oups! La page que vous demandez n'existe pas.</h2>
-      <p><Link to="/">Retourner sur la page d'accueil</Link></p>
-    </div>
+      <div>
+        <h1>404</h1>
+        <p>Oups! La page que vous demandez n'existe pas.</p>
+        <p>Retourner sur la page d'accueil</p>
+      </div>
   );
 }
 

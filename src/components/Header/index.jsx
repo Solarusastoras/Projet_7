@@ -1,19 +1,16 @@
-import { Link } from "react-router-dom";
-import logoHeader from "./logo_kasa.svg";
+import React from "react";
+import logoHeader from '../../utils/Images/logoHeader.png'
 import "../../utils/CSS/style.css";
-
 
 function Header() {
   return (
     <div className="entet">
-        <div className="logoHeader">
-        <Link to="/">
-          <img  src={logoHeader} alt="Logo de Kasa" />
-        </Link>
-        </div>
+      <div className="logoHeader">
+        <img src={logoHeader} alt="Logo de Kasa" />
+      </div>
       <nav>
-      <p>Accueil</p>
-      <link to="/Apropos">A Propos</link>
+        <p>Accueil</p>
+        <link to="/Apropos">A Propos</link>
       </nav>
     </div>
   );

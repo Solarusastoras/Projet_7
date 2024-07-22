@@ -5,6 +5,7 @@
 
 // Importation des composants
 @import "elements/elements";
+@import "elements/cards";
 
 // Importation des layouts
 @import "layouts/containers";
@@ -15,7 +16,6 @@
 // Importation pages
 @import "pages/apparts";
 @import "pages/apropos";
-@import "pages/cards";
 @import "pages/error";
 @import "pages/home";
 
