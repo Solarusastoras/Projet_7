@@ -1,4 +1,4 @@
-import "../../utils/CSS/style.css";
+import "../../utils/SASS/index.scss";
 
 
 

@@ -1,6 +1,6 @@
 import React from "react";
 import logoHeader from '../../utils/Images/logoHeader.png'
-import "../../utils/CSS/style.css";
+import "../../utils/SASS/index.scss";
 
 function Header() {
   return (
@@ -10,7 +10,7 @@ function Header() {
       </div>
       <nav>
         <p>Accueil</p>
-        <link to="/Apropos">A Propos</link>
+        <p>A Propos</p>
       </nav>
     </div>
   );
