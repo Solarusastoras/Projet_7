@@ -11,17 +11,26 @@ const ToggleSection = ({ title, children }) => {
 
   return (
     <div>
-      <h3  className="depliantApropos" onClick={toggle} style={{ cursor: "pointer" }}>
+      <h3
+        className="depliantApropos"
+        onClick={toggle}
+        style={{ cursor: "pointer" }}
+      >
         {title}{" "}
         <span>
           <img
             src={isOpen ? iconDown : iconUp}
             alt={isOpen ? "Flèche vers le bas" : "Flèche vers le haut"}
-            style={{ width: "16px", height: "16px", filter: "invert(100%)", marginRight: "25px" }}
+            style={{
+              width: "16px",
+              height: "16px",
+              filter: "invert(100%)",
+              marginRight: "25px",
+            }}
           />
         </span>
       </h3>
-      {isOpen && <p className="texteApropos" >{children}</p>}
+      {isOpen && <p className="texteApropos">{children}</p>}
     </div>
   );
 };

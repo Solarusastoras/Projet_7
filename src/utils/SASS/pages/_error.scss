@@ -1,0 +1,37 @@
+$base-color: #ffffff;
+$secondary-color: #000000;
+$third-color: #ff6060;
+$fourth-color: #f6f6f6f6;
+
+.centre_error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 139px;
+}
+
+h1,
+.text_Error {
+    color: $third-color;
+}
+
+h1,
+.text_Error,
+.accueil_error {
+    margin-bottom: 139px;
+}
+
+h1 {
+    font-size: 288px;
+    font-weight: bold;
+}
+
+.text_Error {
+    font-size: 36px;
+}
+.accueil_error {
+    text-decoration: none;
+    color: $secondary-color;
+    font-size: 18px;
+}
