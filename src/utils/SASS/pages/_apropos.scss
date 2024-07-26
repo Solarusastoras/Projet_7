@@ -1,0 +1,41 @@
+$third-color: #ff6060;
+$base-color: #ffffff;
+$fourth-color: #f6f6f6f6;
+
+.depliantApropos {
+    background-color: $third-color;
+    width: 1023px;
+    height: 52px;
+    margin-left: 15%;
+    color: $base-color;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 17px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.texteApropos {
+    background-color: $fourth-color;
+    height: auto;
+    padding-bottom: 20px;
+    width: 1023px;
+    margin-top: -25px;
+    margin-left: 15%;
+    padding-left: 18px;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.texteApropos::after {
+    content: "";
+    display: inline-block;
+    width: 50px;
+}

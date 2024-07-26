@@ -1,0 +1,31 @@
+$base-color: #ffffff;
+$fourth-color: #f6f6f6f6;
+
+body {
+    max-width: 1440px;
+}
+
+
+
+.home_text {
+    position: relative;
+}
+
+.home_text .position_titre {
+    position: absolute;
+    margin-top: -180px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $base-color;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.card_ctn {
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: $fourth-color;
+    height: 2000px;
+    width: 1240px;
+    display: grid;
+}
