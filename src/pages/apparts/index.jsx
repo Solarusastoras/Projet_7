@@ -1,12 +1,13 @@
-import React from 'react';
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 import data from "../../data/logements.json";
-import Error from '../../components/Error';
-import "../../utils/SASS/index.scss";
-function Appart() {
-  return <div>Appart</div>;
+import "../../utils/SASS/pages/_apparts.scss";
+import Depliant from "../../components/Drop_down";
 
-  
-}
+function Apparts() {
+  return (
+    <div>
+    </div>
+  );
+};
 
-export default Appart;
+export default Apparts;

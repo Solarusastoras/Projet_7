@@ -5,8 +5,6 @@ body {
     max-width: 1440px;
 }
 
-
-
 .home_text {
     position: relative;
 }
@@ -14,7 +12,7 @@ body {
 .home_text .position_titre {
     position: absolute;
     margin-top: -180px;
-    left: 50%;
+    left: 48%;
     transform: translate(-50%, -50%);
     color: $base-color;
     font-size: 48px;
@@ -25,7 +23,7 @@ body {
     margin-left: 100px;
     margin-right: 100px;
     background-color: $fourth-color;
-    height: 2000px;
+    height: auto;
     width: 1240px;
     display: grid;
 }

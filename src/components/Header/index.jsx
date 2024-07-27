@@ -13,11 +13,13 @@ function Header() {
       />
 
       <nav className="nav_header">
-      <Link to="/" className="accueil">Accueil</Link>
+        <Link to="/" className="accueil">
+          Accueil
+        </Link>
         <Link to="/apropos">A Propos</Link>
-      </nav>
-    </div>
-  );
+                                          </nav>
+    </div >
+  );  
 }
 
 export default Header;

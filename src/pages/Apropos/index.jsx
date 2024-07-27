@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../../utils/SASS/pages/_apropos.scss";
+import Depliant from "../../components/Drop_down";
 import imageIndex from "../../utils/Images/bcktop2.png";
 import iconUp from "../../utils/Images/chevron-up-solid.svg";
 import iconDown from "../../utils/Images/chevron-down-solid.svg";
@@ -11,29 +12,19 @@ const ToggleSection = ({ title, children }) => {
 
   return (
     <div>
-      <h3
-        className="depliantApropos"
-        onClick={toggle}
-        style={{ cursor: "pointer" }}
+      <Depliant
+        title={title}
+        isOpen={isOpen}
+        toggle={toggle}
+        iconDown={iconDown}
+        iconUp={iconUp}
       >
-        {title}{" "}
-        <span>
-          <img
-            src={isOpen ? iconDown : iconUp}
-            alt={isOpen ? "Flèche vers le bas" : "Flèche vers le haut"}
-            style={{
-              width: "16px",
-              height: "16px",
-              filter: "invert(100%)",
-              marginRight: "25px",
-            }}
-          />
-        </span>
-      </h3>
-      {isOpen && <p className="texteApropos">{children}</p>}
+        {children}
+      </Depliant>
     </div>
   );
 };
+
 function Apropos() {
   return (
     <div className="apropos">
