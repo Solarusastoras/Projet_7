@@ -20,7 +20,7 @@ $sixth-color: #a9a9a9;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px;
 }
 
 .card-title {
@@ -34,4 +34,42 @@ $sixth-color: #a9a9a9;
   font-weight: bold;
   padding-left: 20px;
   padding-top: 20px;
+  border-radius: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 767.98px) {
+  .logements {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-top: 9%;
+  }
+
+  .card {
+    width: 110%;
+    height: 255px;
+    margin-bottom: -40px;
+    margin-top: 22px;
+    margin-left: 9%;
+  }
+
+  .card-cover {
+    width: 110%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .card-title {
+    position: relative;
+    top: -29%;
+    background-color: rgba(37, 36, 36, 0.8);
+    height: 50px;
+    filter: brightness(300%);
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    width: 98%;
+  }
 }

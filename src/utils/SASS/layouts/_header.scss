@@ -7,6 +7,12 @@ $secondary-color: #000000;
     margin-right: 100px;
 }
 
+.image_header {
+    width: 210px;
+    height: 68px;
+    margin-top: 49px;
+}
+
 .nav_header {
     display: flex;
     flex-direction: row;
@@ -21,5 +27,28 @@ $secondary-color: #000000;
 }
 
 .accueil {
-    margin-right: 69px;
+    margin-right: 25px;
+}
+
+@media (min-width: 320px) and (max-width: 767.98px) {
+    .entet {
+        margin-left: 4%;
+    }
+
+    .image_header {
+        width: 145px;
+        height: 47px;
+        margin-top: 20px;
+    }
+
+    .nav_header {
+        font-size: 12px;
+        margin-top: 40px;
+        margin-left: 35%;
+    }
+
+    .accueil {
+        padding-right: 10px;
+        
+    }
 }

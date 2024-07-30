@@ -2,6 +2,18 @@ $third-color: #ff6060;
 $base-color: #ffffff;
 $fourth-color: #f6f6f6f6;
 
+.image_apropos {
+    width: 1240px;
+    height: 223px;
+    margin-top: 50px;
+    margin-left: 100px;
+    border-radius: 25px 25px 25px 25px;
+    object-fit: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    filter: brightness(70%);
+    margin-bottom: 50px;
+}
+
 .depliantApropos {
     background-color: $third-color;
     width: 1023px;
@@ -38,4 +50,24 @@ $fourth-color: #f6f6f6f6;
     content: "";
     display: inline-block;
     width: 50px;
+}
+@media (min-width: 320px) and (max-width: 767.98px) {
+    .image_apropos {
+        width: 120%;
+        height: 111px;
+        margin-top: 50px;
+        margin-left: 7%;
+        border-radius: 10px;
+    }
+
+    .depliantApropos {
+        width: 115%;
+        margin-left: 6%;
+    }
+    .texteApropos {
+        height: auto;
+        width: 100%;
+    }
+
+    
 }

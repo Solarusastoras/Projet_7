@@ -29,19 +29,9 @@ function Apropos() {
   return (
     <div className="apropos">
       <img
+        className="image_apropos"
         src={imageIndex}
         alt="une coligne avec vu sur les montagnes"
-        style={{
-          width: "1240px",
-          height: "223px",
-          marginTop: "50px",
-          marginLeft: "100px",
-          borderRadius: "25px 25px 25px 25px",
-          objectFit: "cover",
-          boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.5)",
-          filter: "brightness(70%)",
-          marginBottom: "50px",
-        }}
       />
       <ToggleSection title="Fiabilité">
         Les annonces postées sur Kasa garantissent une fiabilité totale. Les

@@ -8,7 +8,7 @@ function Error() {
     })
   return (
       <div className="centre_error">
-        <h1>404</h1>
+        <h1 className="h1_error">404</h1>
         <p className="text_Error">Oups! La page que vous demandez n'existe pas.</p>
         <Link to="/" className="accueil_error">Retourner sur la page d'accueil</Link>
       </div>

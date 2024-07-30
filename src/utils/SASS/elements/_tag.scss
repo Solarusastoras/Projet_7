@@ -1,0 +1,22 @@
+$third-color: #ff6060;
+$base-color: #ffffff;
+
+
+.tag_line {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+
+.tags {
+    background-color: $third-color;
+    color: $base-color;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 14px;
+
+}

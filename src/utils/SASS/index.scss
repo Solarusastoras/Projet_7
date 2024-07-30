@@ -4,22 +4,17 @@
 @import "base/fonts";
 
 // Importation des composants
-@import "elements/elements";
 @import "elements/cards";
+@import "elements/titrelieux";
 
 // Importation des layouts
 @import "layouts/containers";
 @import "layouts/footer";
 @import "layouts/header";
-@import "layouts/images";
+
 
 // Importation pages
 @import "pages/apparts";
 @import "pages/apropos";
 @import "pages/error";
 @import "pages/home";
-
-// Importation des outils
-@import "outils/mixins";
-@import "outils/variables";
-@import "outils/maps";

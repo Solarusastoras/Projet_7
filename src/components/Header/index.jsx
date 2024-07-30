@@ -6,20 +6,16 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <div className="entet">
-      <img
-        src={logoHeader}
-        alt="Logo de Kasa"
-        style={{ width: "210px", height: "68px", marginTop: "49px" }}
-      />
+      <img className="image_header" src={logoHeader} alt="Logo de Kasa" />
 
       <nav className="nav_header">
         <Link to="/" className="accueil">
           Accueil
         </Link>
         <Link to="/apropos">A Propos</Link>
-                                          </nav>
-    </div >
-  );  
+      </nav>
+    </div>
+  );
 }
 
 export default Header;

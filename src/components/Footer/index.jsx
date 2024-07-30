@@ -5,12 +5,12 @@ import logoFooter from "../../utils/Images/logoFooter.png";
 function Footer() {
   return (
     <div className="background_b">
-    <div className="footer">
-      <img src={logoFooter} alt="Logo Footer"style={{ width: '122px' }}/>
+      <div className="footer">
+        <img className="image_footer" src={logoFooter} alt="Logo Footer" />
 
-      <p className="decallage_g">© 2020 Kasa. All rights reserved</p>
+        <p className="decallage_g">© 2020 Kasa. All rights reserved</p>
       </div>
-      </div>
+    </div>
   );
 }
 
