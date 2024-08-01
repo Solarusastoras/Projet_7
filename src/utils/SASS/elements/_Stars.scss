@@ -1,17 +1,5 @@
-$third-color: #ff6060;
-$sixth-color: #E3E3E3;
-
-
 .star-rating {
     display: flex;
-}
-
-.star {
-    color: $sixth-color; // Couleur pour les étoiles non remplies
-}
-
-.star_selection {
-    color: $third-color;
 }
 
 .star,

@@ -6,15 +6,16 @@ import iconDown from "../../utils/Images/chevron-down-solid.svg";
 import TitreLieux from "../../components/Titre_lieux";
 import Auteur from "../../components/Auteur";
 import Stars from "../../components/Stars";
-import Tags from "../../components/Tag"
+import Tags from "../../components/Tag";
 import logements from "../../data_apparts/logements.json";
+import "../../utils/SASS/base/_colors.scss";
+import "../../utils/SASS/base/_fonts.scss";
 
 const ToggleSectionbis = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
   const togglebis = () => setIsOpen(!isOpen);
 
   return (
-    
     <div>
       <Depliant
         title={title}
@@ -31,22 +32,20 @@ const ToggleSectionbis = ({ title, children }) => {
 const logement = logements[0];
 function Apparts() {
   return (
-
     <div className="apropos">
-
       <div className="gallery"></div>
 
-     <div>
-      <TitreLieux />
-      <Auteur />
-      <Tags />
-      <Stars />
+      <div>
+        <TitreLieux />
+        <Auteur />
+        <Tags />
+        <Stars />
       </div>
 
       <div>
-      <div className="tag"></div>
+        <div className="tag"></div>
 
-      <div className="stars"></div>
+        <div className="stars"></div>
       </div>
       <div>
         <ToggleSectionbis title="Description">

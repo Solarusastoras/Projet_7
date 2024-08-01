@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
+import "../../utils/SASS/base/_colors.scss";
+import "../../utils/SASS/base/_fonts.scss";
+import "../../utils/SASS/elements/_drop_down.scss";
 
-const Depliant = ({ title, isOpen, toggle, iconDown, iconUp, children }) => {
+const Depliant = ({ title, iconDown, iconUp, children }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [clicked, setClicked] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+    setClicked(true);
+    setTimeout(() => setClicked(false), 600); 
+  };
+
   return (
     <div>
-      <h3
-        className="depliantApropos"
-        onClick={toggle}
-        style={{ cursor: "pointer" }}
-      >
+      <h3 className={`depliantApropos ${clicked ? "" : "titreNonClique"}`}>
         {title}{" "}
         <span>
           <img
@@ -18,11 +26,15 @@ const Depliant = ({ title, isOpen, toggle, iconDown, iconUp, children }) => {
               height: "16px",
               filter: "invert(100%)",
               marginRight: "25px",
+              cursor: "pointer"
             }}
+            onClick={toggle}
           />
         </span>
       </h3>
-      {isOpen && <p className="texteApropos">{children}</p>}
+      <div className={`texteApropos ${isOpen ? "open" : "closed"}`}>
+        {children}
+      </div>
     </div>
   );
 };

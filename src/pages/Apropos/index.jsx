@@ -4,6 +4,8 @@ import Depliant from "../../components/Drop_down";
 import imageIndex from "../../utils/Images/bcktop2.png";
 import iconUp from "../../utils/Images/chevron-up-solid.svg";
 import iconDown from "../../utils/Images/chevron-down-solid.svg";
+import "../../utils/SASS/base/_colors.scss";
+import "../../utils/SASS/base/_fonts.scss";
 
 const ToggleSection = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);

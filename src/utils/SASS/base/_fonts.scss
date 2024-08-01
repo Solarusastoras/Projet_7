@@ -1,3 +1,53 @@
 body {
     font-family: "Montserrat", sans-serif;
 }
+
+.h1_error {
+    font-size: 288px;
+}
+
+.home_text .position_titre {
+    font-size: 48px;
+}
+
+.title_apparts,
+.text_Error {
+    font-size: 36px;
+}
+
+.nav_header,
+.depliantApropos {
+    font-size: 24px;
+}
+
+.texteApropos {
+    font-size: 20px;
+}
+
+.auteur-container,
+.card-title,
+.logements,
+.accueil_error {
+    font-size: 18px;
+}
+
+.tags {
+    font-size: 14px;
+}
+
+.card-title,
+.depliantApropos,
+.h1_error,
+.home_text .position_titre {
+    font-weight: bold;
+}
+
+@media (min-width: 320px) and (max-width: 767.98px) {
+    .nav_header {
+        font-size: 12px;
+    }
+
+    .home_text .position_titre {
+        font-size: 24px;
+    }
+}

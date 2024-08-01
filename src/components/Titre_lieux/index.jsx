@@ -1,6 +1,7 @@
 import React from "react";
 import logements from "../../data_apparts/logements.json";
-import "../../utils/SASS/elements/_titrelieux.scss";
+import "../../utils/SASS/base/_colors.scss";
+import "../../utils/SASS/base/_fonts.scss";
 
 const TitreLieux = ({ title, location, id }) => (
   <div>

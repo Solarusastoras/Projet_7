@@ -1,6 +1,8 @@
 import React from "react";
 import logements from "../../data_apparts/logements.json";
 import "../../utils/SASS/elements/_Auteur.scss";
+import "../../utils/SASS/base/_colors.scss";
+import "../../utils/SASS/base/_fonts.scss";
 
 const Auteurs = ({ name, picture }) => (
   <div className="auteur-item">

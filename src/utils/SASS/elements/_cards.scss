@@ -1,7 +1,3 @@
-$base-color: #ffffff;
-$fiveth-color: #d3d3d3; /* Gris clair */
-$sixth-color: #a9a9a9;
-
 .logements {
   display: flex;
   flex-wrap: wrap;
@@ -29,10 +25,7 @@ $sixth-color: #a9a9a9;
   background-color: rgba(37, 36, 36, 0.8);
   height: 70px;
   filter: brightness(300%);
-  color: $base-color;
-  font-size: 18px;
-  font-weight: bold;
-  padding-left: 20px;
+   padding-left: 20px;
   padding-top: 20px;
   border-radius: 10px;
 }
@@ -65,7 +58,6 @@ $sixth-color: #a9a9a9;
     background-color: rgba(37, 36, 36, 0.8);
     height: 50px;
     filter: brightness(300%);
-    font-size: 16px;
     font-weight: bold;
     padding-left: 20px;
     padding-right: 20px;

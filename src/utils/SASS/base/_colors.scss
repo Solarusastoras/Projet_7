@@ -2,4 +2,56 @@ $base-color: #ffffff;
 $secondary-color: #000000;
 $third-color: #ff6060;
 $fourth-color: #f6f6f6f6;
-$sixth-color: #E3E3E3;
+$fiveth-color: #e3e3e3;
+
+// color
+.card-title,
+.tags,
+.background_b,
+.depliantApropos,
+.home_text .position_titre {
+    color: $base-color;
+}
+
+.nav_header {
+    a {
+        color: $secondary-color;
+    }
+}
+
+.accueil_error {
+    color: $secondary-color;
+}
+
+.auteur-container,
+.star_selection,
+.title_apparts,
+.h1_error,
+.text_Error {
+    color: $third-color;
+}
+
+.star {
+    color: $fiveth-color;
+}
+
+// bacground
+
+.background_b {
+    background-color: $secondary-color;
+}
+.tags,
+.depliantApropos {
+    background-color: $third-color;
+}
+
+.texteApropos,
+.card_ctn {
+    background-color: $fourth-color;
+}
+
+@media (min-width: 320px) and (max-width: 767.98px) {
+    .card_ctn {
+        background-color: $base-color;
+    }
+}

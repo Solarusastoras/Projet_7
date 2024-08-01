@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import logements from "../../data_apparts/logements.json";
 import "../../utils/SASS/elements/_cards.scss";
+import "../../utils/SASS/base/_colors.scss";
+import "../../utils/SASS/base/_fonts.scss";
 
 const Card = ({ id, cover, title, setClickedId }) => {
   const navigate = useNavigate();

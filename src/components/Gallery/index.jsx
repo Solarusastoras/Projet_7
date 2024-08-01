@@ -1,10 +1,9 @@
-
-
-
+import React from "react";
+import "../../utils/SASS/base/_colors.scss";
+import "../../utils/SASS/base/_gallery.scss";
+import "../../utils/SASS/base/_fonts.scss";
 
 const slides = [];
-
-
 
 let IndexActuel = 0;
 

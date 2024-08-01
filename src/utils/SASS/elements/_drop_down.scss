@@ -1,0 +1,45 @@
+// Variables
+$duration: 0.6s;
+$ease-out: ease-out;
+$max-height-open: 1000px;
+$max-height-closed: 0;
+$opacity-open: 1;
+$opacity-closed: 0;
+
+// Mixins
+@mixin slide-animation($name, $start-transform, $end-transform, $start-opacity, $end-opacity) {
+  @keyframes #{$name} {
+    0% {
+      transform: translateY(#{$start-transform});
+      opacity: #{$start-opacity};
+    }
+    100% {
+      transform: translateY(#{$end-transform});
+      opacity: #{$end-opacity};
+    }
+  }
+}
+
+// Animations
+@include slide-animation(slide-bottom, -60%, 0, $opacity-closed, $opacity-open);
+@include slide-animation(slide-top, 0%, -100%, $opacity-open, $opacity-closed);
+
+// Styles
+.texteApropos {
+  max-height: $max-height-closed;
+  overflow: hidden;
+  opacity: $opacity-closed;
+  transition: max-height $duration $ease-out, opacity $duration $ease-out;
+}
+
+.texteApropos.open {
+  max-height: $max-height-open;
+  opacity: $opacity-open;
+  animation: slide-bottom $duration forwards;
+}
+
+.texteApropos.closed {
+  max-height: $max-height-closed;
+  opacity: $opacity-closed;
+  animation: slide-top $duration forwards;
+}
