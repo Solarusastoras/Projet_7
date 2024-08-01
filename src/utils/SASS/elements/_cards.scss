@@ -21,10 +21,9 @@
 
 .card-title {
   position: relative;
+  background: linear-gradient(to bottom, rgba(211, 211, 211, 0.5), rgba(0, 0, 0, 0.8));
   top: -27%;
-  background-color: rgba(37, 36, 36, 0.8);
   height: 70px;
-  filter: brightness(300%);
    padding-left: 20px;
   padding-top: 20px;
   border-radius: 10px;
@@ -55,7 +54,7 @@
   .card-title {
     position: relative;
     top: -29%;
-    background-color: rgba(37, 36, 36, 0.8);
+    background: linear-gradient(to bottom, rgba(211, 211, 211, 1.2), rgba(211, 211, 211, 0.2));
     height: 50px;
     filter: brightness(300%);
     font-weight: bold;

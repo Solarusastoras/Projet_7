@@ -8,16 +8,16 @@ $opacity-closed: 0;
 
 // Mixins
 @mixin slide-animation($name, $start-transform, $end-transform, $start-opacity, $end-opacity) {
-  @keyframes #{$name} {
-    0% {
-      transform: translateY(#{$start-transform});
-      opacity: #{$start-opacity};
+    @keyframes #{$name} {
+        0% {
+            transform: translateY(#{$start-transform});
+            opacity: #{$start-opacity};
+        }
+        100% {
+            transform: translateY(#{$end-transform});
+            opacity: #{$end-opacity};
+        }
     }
-    100% {
-      transform: translateY(#{$end-transform});
-      opacity: #{$end-opacity};
-    }
-  }
 }
 
 // Animations
@@ -26,20 +26,22 @@ $opacity-closed: 0;
 
 // Styles
 .texteApropos {
-  max-height: $max-height-closed;
-  overflow: hidden;
-  opacity: $opacity-closed;
-  transition: max-height $duration $ease-out, opacity $duration $ease-out;
+    max-height: $max-height-closed;
+    overflow: hidden;
+    opacity: $opacity-closed;
+    transition:
+        max-height $duration $ease-out,
+        opacity $duration $ease-out;
 }
 
 .texteApropos.open {
-  max-height: $max-height-open;
-  opacity: $opacity-open;
-  animation: slide-bottom $duration forwards;
+    max-height: $max-height-open;
+    opacity: $opacity-open;
+    animation: slide-bottom $duration forwards;
 }
 
 .texteApropos.closed {
-  max-height: $max-height-closed;
-  opacity: $opacity-closed;
-  animation: slide-top $duration forwards;
+    max-height: $max-height-closed;
+    opacity: $opacity-closed;
+    animation: slide-top $duration forwards;
 }
