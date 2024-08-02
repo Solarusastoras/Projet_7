@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import logements from "../../data_apparts/logements.json";
 import "../../utils/SASS/elements/_Stars.scss";
 import "../../utils/SASS/base/_colors.scss";
@@ -28,13 +28,25 @@ const StarRating = ({ rating }) => {
 };
 
 const Stars = () => {
+  const [logement, setLogement] = useState(null);
+
+  useEffect(() => {
+    const clickedId = localStorage.getItem("clickedId");
+    const foundLogement = logements.find(
+      (logement) => logement.id === clickedId
+    );
+    setLogement(foundLogement);
+  }, []);
+
+  if (!logement) {
+    return <div>Chargement...</div>;
+  }
+
   return (
     <div className="rating">
-      {logements.map((logement) => (
-        <div key={logement.id} className="stars">
-          <StarRating rating={logement.rating} />
-        </div>
-      ))}
+      <div key={logement.id} className="stars">
+        <StarRating rating={logement.rating} />
+      </div>
     </div>
   );
 };

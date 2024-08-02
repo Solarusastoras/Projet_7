@@ -9,7 +9,10 @@ $fiveth-color: #e3e3e3;
 .tags,
 .background_b,
 .depliantApropos,
-.home_text .position_titre {
+.home_text .position_titre,
+.chiffre,
+.arrow_left,
+.arrow_right {
     color: $base-color;
 }
 
@@ -35,7 +38,7 @@ $fiveth-color: #e3e3e3;
     color: $fiveth-color;
 }
 
-// bacground
+// background
 
 .background_b {
     background-color: $secondary-color;
