@@ -55,7 +55,34 @@ i .title_apparts {
         font-size: 24px;
     }
 
-    .title_apparts {
-        text-align: justify;
+    .title_apparts, .text_Error {
+        font-size: 18px;
     }
+
+    .depliantApropos {
+        font-size: 13px;
+    }
+
+    .auteur-container {
+        font-size: 12px;
+    }
+
+    .accueil_error {
+        font-size: 14px;
+    }
+
+    .tags {
+        font-size: 10px;
+    }
+
+    .h1_error {
+        font-size: 99px;
+    }
+
+    .tags, .depliantApropos {
+        font-weight: bold;
+    }
+
+   
+
 }

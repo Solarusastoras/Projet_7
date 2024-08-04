@@ -9,3 +9,18 @@
     width: 24.75px;
     height: 24px;
 }
+
+@media (min-width: 320px) and (max-width: 767.98px) {
+    .star,
+.star_selection {
+    width: 18px;
+    height: 18px;
+}
+
+.star-rating {
+    margin-top: -80px;
+    margin-left: 10%;
+}
+
+
+}

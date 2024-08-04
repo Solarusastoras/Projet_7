@@ -6,7 +6,7 @@ import Apropos from "./pages/Apropos";
 import Apparts from "./pages/Apparts";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
-import Error from "./components/Error";
+import Error from "./pages/Error";
 import "./utils/SASS/index.scss";
 
 // Création d'une racine

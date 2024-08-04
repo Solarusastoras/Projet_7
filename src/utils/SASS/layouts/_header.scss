@@ -29,20 +29,22 @@
 @media (min-width: 320px) and (max-width: 767.98px) {
     .entet {
         margin-left: 4%;
+        margin-right: 0;
     }
 
     .image_header {
-        width: 145px;
+        width: 40%;
         height: 47px;
         margin-top: 20px;
     }
 
     .nav_header {
         margin-top: 40px;
-        margin-left: 35%;
+        margin-left: 10%;
+        text-transform: uppercase;
     }
 
     .accueil {
-        padding-right: 10px;
+        padding-right: 1%;
     }
 }

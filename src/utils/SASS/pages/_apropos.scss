@@ -45,7 +45,7 @@
 }
 @media (min-width: 320px) and (max-width: 767.98px) {
     .image_apropos {
-        width: 120%;
+        width: 90%;
         height: 111px;
         margin-top: 50px;
         margin-left: 7%;
@@ -53,11 +53,13 @@
     }
 
     .depliantApropos {
-        width: 115%;
-        margin-left: 6%;
+        width:30%;
+        margin-left: 3%;
+        height: 30px;
     }
     .texteApropos {
         height: auto;
-        width: 100%;
+        width: 30%;
+        margin-left: 3%;
     }
 }

@@ -23,3 +23,17 @@
 .auteur {
     justify-content: center;
 }
+
+@media (min-width: 320px) and (max-width: 767.98px) {
+    .auteur-container {
+       flex-direction: column;
+       position: relative;
+       margin-left: 80%;
+       top: -30px;
+    }
+    .auteur-container img {
+        width: 32px;
+        height: 32px;
+    }
+
+}

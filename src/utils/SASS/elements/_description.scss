@@ -18,3 +18,16 @@ ul {
     display: flex;
     flex-direction: row;
 }
+
+@media (min-width: 320px) and (max-width: 767.98px){
+    .ligne_apparts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+    }
+
+    .barre_appart {
+        max-width: 74%;
+        margin: 0 0 0 0;
+    }
+}

@@ -11,3 +11,15 @@
     margin: 5px;
     border-radius: 10px;
 }
+@media (min-width: 320px) and (max-width: 767.98px) {
+    .tag_line {
+        margin: -150px 0px 80px 7%;
+        gap: 5px;
+    }
+
+    .tags {
+        width:auto;
+        margin-left: 10px;
+        border-radius: 5px;
+    }
+}

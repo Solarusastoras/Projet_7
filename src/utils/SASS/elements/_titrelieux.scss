@@ -1,6 +1,6 @@
 .title_apparts,
 .localisation {
-    margin-left: 11%; 
+    margin-left: 11%;
 }
 
 .title_apparts {
@@ -10,4 +10,10 @@
 
 .localisation {
     margin-bottom: 50px;
+}
+
+@media (min-width: 320px) and (max-width: 767.98px) {
+    .title_apparts {
+        margin-top: -90px;
+    }
 }

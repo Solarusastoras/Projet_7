@@ -39,16 +39,25 @@
 
     .banner-img {
         width: 100%;
-        max-height: 415px!important;
+        height: 415px;
         object-fit: cover;
         margin-top: 50px;
         border-radius: 25px;
     }
 }
-
 @media (min-width: 320px) and (max-width: 767.98px) {
-    .banner {
-        max-width:110%;
-        max-height: 575px !important;
+    .banner-img {
+        min-width: 103%;
+        height: 255px !important;
+    }
+
+    .arrow_left,
+    .arrow_right {
+        margin-top: -130px;
+        font-size: 200%;
+    }
+
+    .chiffre {
+        top: 350px;
     }
 }
