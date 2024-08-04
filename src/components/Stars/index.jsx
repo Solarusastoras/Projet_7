@@ -3,6 +3,7 @@ import logements from "../../data_apparts/logements.json";
 import "../../utils/SASS/elements/_Stars.scss";
 import "../../utils/SASS/base/_colors.scss";
 import "../../utils/SASS/base/_fonts.scss";
+import starSolid from "../../utils/Images/star-solid.svg";
 
 const StarRating = ({ rating }) => {
   const totalStars = 5;
@@ -12,13 +13,13 @@ const StarRating = ({ rating }) => {
     if (i <= rating) {
       stars.push(
         <span key={i} className="star_selection">
-          ★
+          <img src={starSolid} alt="Star" />
         </span>
       );
     } else {
       stars.push(
         <span key={i} className="star">
-          ★
+          <img src={starSolid} alt="Star" />
         </span>
       );
     }

@@ -27,7 +27,6 @@ $fiveth-color: #e3e3e3;
 }
 
 .auteur-container,
-.star_selection,
 .title_apparts,
 .h1_error,
 .text_Error {
@@ -51,6 +50,14 @@ $fiveth-color: #e3e3e3;
 .texteApropos,
 .card_ctn {
     background-color: $fourth-color;
+}
+
+.star_selection img {
+    filter: invert(34%) sepia(100%) saturate(7482%) hue-rotate(353deg) brightness(101%) contrast(104%);
+}
+
+.star img {
+    filter: invert(86%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(91%) contrast(86%);
 }
 
 @media (min-width: 320px) and (max-width: 767.98px) {

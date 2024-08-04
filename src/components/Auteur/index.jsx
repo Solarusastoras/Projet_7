@@ -16,7 +16,9 @@ const Auteur = () => {
 
   useEffect(() => {
     const clickedId = localStorage.getItem("clickedId");
-    const foundLogement = logements.find((logement) => logement.id === clickedId);
+    const foundLogement = logements.find(
+      (logement) => logement.id === clickedId
+    );
     setLogement(foundLogement);
   }, []);
 
@@ -26,10 +28,7 @@ const Auteur = () => {
 
   return (
     <div className="auteur-container">
-      <Auteurs
-        name={logement.host.name}
-        picture={logement.host.picture}
-      />
+      <Auteurs name={logement.host.name} picture={logement.host.picture} />
     </div>
   );
 };

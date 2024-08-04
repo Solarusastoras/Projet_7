@@ -7,14 +7,13 @@ body {
 }
 
 .home_text .position_titre {
-    font-size: 48px;
+    font-size: 3rem;
 }
 
 .text_Error {
     font-size: 36px;
 }
-i
-.title_apparts {
+i .title_apparts {
     font-size: 1.8rem;
 }
 
@@ -42,7 +41,8 @@ i
 .depliantApropos,
 .h1_error,
 .home_text,
-.chiffre {
+.chiffre,
+.tags {
     font-weight: bold;
 }
 
@@ -53,5 +53,9 @@ i
 
     .home_text .position_titre {
         font-size: 24px;
+    }
+
+    .title_apparts {
+        text-align: justify;
     }
 }

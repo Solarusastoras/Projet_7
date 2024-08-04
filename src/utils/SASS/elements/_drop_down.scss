@@ -21,7 +21,7 @@ $opacity-closed: 0;
 }
 
 // Animations
-@include slide-animation(slide-bottom, -60%, 0, $opacity-closed, $opacity-open);
+@include slide-animation(slide-bottom, -50%, 0, $opacity-closed, $opacity-open);
 @include slide-animation(slide-top, 0%, -100%, $opacity-open, $opacity-closed);
 
 // Styles

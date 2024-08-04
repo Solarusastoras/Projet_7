@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import "../../utils/SASS/base/_colors.scss";
 import "../../utils/SASS/base/_fonts.scss";
 import "../../utils/SASS/elements/_gallery.scss";
@@ -16,13 +16,7 @@ const Carousel = ({ logementId }) => {
     }
   }, [logementId]);
 
-  useEffect(() => {
-    if (pictures.length > 0) {
-      mettreAJourCarousel();
-    }
-  }, [indexActuel, pictures]);
-
-  function mettreAJourCarousel() {
+  const mettreAJourCarousel = useCallback(() => {
     if (pictures.length === 0) return;
 
     // Image affichée
@@ -38,7 +32,13 @@ const Carousel = ({ logementId }) => {
         dot.classList.add("dot_selected");
       }
     });
-  }
+  }, [pictures, indexActuel]);
+
+  useEffect(() => {
+    if (pictures.length > 0) {
+      mettreAJourCarousel();
+    }
+  }, [indexActuel, pictures, mettreAJourCarousel]);
 
   const handleLeftArrowClick = () => {
     setIndexActuel((prevIndex) =>
@@ -58,9 +58,6 @@ const Carousel = ({ logementId }) => {
 
   return (
     <div id="carousel">
-      <div className="arrow_left" onClick={handleLeftArrowClick}>
-        {"<"}
-      </div>
       <div className="banner">
         <img
           className="banner-img"
@@ -69,8 +66,13 @@ const Carousel = ({ logementId }) => {
         />
         <div className="caption">{pictures[indexActuel]?.caption}</div>
       </div>
-      <div className="arrow_right" onClick={handleRightArrowClick}>
-        {">"}
+      <div className="alignement_arrow">
+        <div className="arrow_left" onClick={handleLeftArrowClick}>
+          {"<"}
+        </div>
+        <div className="arrow_right" onClick={handleRightArrowClick}>
+          {">"}
+        </div>
       </div>
       <div className="chiffre">
         {indexActuel + 1}/{pictures.length}

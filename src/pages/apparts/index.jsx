@@ -17,6 +17,11 @@ const ToggleSectionbis = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
   const togglebis = () => setIsOpen(!isOpen);
 
+  // Ajoutez cette condition pour cacher le composant si le titre est "Équipements"
+  if (title === "Équipements") {
+    return null;
+  }
+
   return (
     <div>
       <Depliant
@@ -48,16 +53,30 @@ function Apparts() {
   }
 
   return (
-    <div className="apropos">
-      <div className="gallery"></div>
+    <div>
+      <div className="gallery">
+        <Carousel logementId={logement.id} />
+      </div>
 
       <div>
-        <Carousel logementId={logement.id} />
-        <TitreLieux logementId={logement.id} />
-        <Auteur logementId={logement.id} />
-        <Tags className="tag" logementId={logement.id} />
-        <Stars className="stars" logementId={logement.id} />
-        <LogementDetails logementId={logement.id}/>
+        <div className="ligne_appart">
+          <TitreLieux logementId={logement.id} />
+          <Auteur logementId={logement.id} />
+        </div>
+        <div className="ligne_appart">
+          <Tags className="tag" logementId={logement.id} />
+          <Stars className="stars" logementId={logement.id} />
+        </div>
+        <div>
+          <LogementDetails logementId={logement.id} />
+          <ToggleSectionbis title="Équipements">
+            <ul>
+              {logement.equipments.map((equipment, index) => (
+                <li key={index}>{equipment}</li>
+              ))}
+            </ul>
+          </ToggleSectionbis>
+        </div>
       </div>
     </div>
   );

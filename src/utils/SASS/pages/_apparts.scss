@@ -1,0 +1,10 @@
+.ligne_appart {
+    display: flex;
+    flex-direction: row;
+}
+
+.ligne_apparts {
+    display: flex;
+    justify-content: space-between;
+}
+

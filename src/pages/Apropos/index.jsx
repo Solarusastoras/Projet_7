@@ -13,7 +13,7 @@ const ToggleSection = ({ title, children }) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
+    <div className="taille_depliant_apropos">
       <Depliant
         title={title}
         isOpen={isOpen}
