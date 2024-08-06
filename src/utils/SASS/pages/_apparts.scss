@@ -1,6 +1,8 @@
 .ligne_appart {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin-right: 7%;
 }
 
 .ligne_apparts {
@@ -8,7 +10,7 @@
     justify-content: space-between;
 }
 
-@media (min-width: 320px) and (max-width: 767.98px){
+@media (min-width: 320px) and (max-width: 767.98px) {
     .ligne_appart {
         display: flex;
         flex-direction: column;

@@ -12,19 +12,18 @@
 
 @media (min-width: 320px) and (max-width: 767.98px) {
     .star,
-.star_selection {
-    width: 18px;
-    height: 18px;
-}
+    .star_selection {
+        width: 18px;
+        height: 18px;
+    }
 
-.star-rating {
-    margin-left: 7%;
-    margin-top: -24%;
-}
+    .star-rating {
+        margin-left: 7%;
+        margin-top: -24%;
+    }
 
-.mobile_stars_auteur {
-    display: block;
-    margin-top: 0px;
-}
-
+    .mobile_stars_auteur {
+        display: block;
+        margin-top: 0px;
+    }
 }

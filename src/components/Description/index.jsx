@@ -26,7 +26,7 @@ const LogementDetails = () => {
     <div className="ligne_apparts">
       <div className="barre_appart">
         <Depliant title="Description" iconDown={iconDown} iconUp={iconUp}>
-          <p>{logement.description}</p>
+          <p className="text_description">{logement.description}</p>
         </Depliant>
       </div>
       <div className="barre_appart - marge_description">
