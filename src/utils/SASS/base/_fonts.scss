@@ -55,15 +55,21 @@ i .title_apparts {
         font-size: 24px;
     }
 
-    .title_apparts, .text_Error {
+    .title_apparts,
+    .text_Error {
         font-size: 18px;
+    }
+
+    .card-title  {
+        font-size: 16px;
     }
 
     .depliantApropos {
         font-size: 13px;
     }
 
-    .auteur-container, .texteApropos {
+    .auteur-container,
+    .texteApropos {
         font-size: 12px;
     }
 
@@ -79,12 +85,12 @@ i .title_apparts {
         font-size: 99px;
     }
 
-    .tags, .depliantApropos {
+    .tags,
+    .depliantApropos {
         font-weight: bold;
     }
     .title_apparts {
         font-weight: normal;
     }
-   
 
 }
