@@ -77,16 +77,8 @@ const Carousel = ({ logementId }) => {
       <div className="chiffre">
         {indexActuel + 1}/{pictures.length}
       </div>
-      <div className="dots">
-        {pictures.map((_, index) => (
-          <span
-            key={index}
-            className={`dot ${index === indexActuel ? "dot_selected" : ""}`}
-            onClick={() => handleDotClick(index)}
-          ></span>
-        ))}
+
       </div>
-    </div>
   );
 };
 

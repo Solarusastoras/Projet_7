@@ -10,6 +10,7 @@ const TitreLieux = ({ title, location }) => (
   </div>
 );
 
+// composant gérant la logique de recupération des données et passe ceci au composant Titrelieu
 const TitreLieuxContainer = () => {
   const [logement, setLogement] = useState(null);
 

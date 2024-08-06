@@ -6,7 +6,8 @@
 
 ul {
     list-style-type: none;
-    margin-left: -70%;
+    margin-left: -45%;
+    padding-left: 2%;
     padding-right: 10px;
     margin-top: 20px;
 }
@@ -24,5 +25,18 @@ ul {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-bottom: -10%;
+    }
+
+    .barre_appart {
+        max-width: 90%;
+        margin: 0 5% 0 5%;
+    }
+    .text_description {
+        margin-right: 5%;
+    }
+
+    ul {
+        margin-left: -30%;
     }
 }

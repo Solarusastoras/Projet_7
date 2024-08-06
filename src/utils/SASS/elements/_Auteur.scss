@@ -1,5 +1,7 @@
 .auteur-container {
-    margin-top: 50px;
+    position: relative;
+    margin-top: 5.5%;
+    right: 0%;
 }
 
 .auteur-container img {
@@ -24,18 +26,20 @@
 
 @media (min-width: 320px) and (max-width: 767.98px) {
     .auteur-container {
-        flex-direction: column;
-        position: relative;
-        margin-left: 60%;
+        position: absolute;
+        top: 83%;
     }
 
     .auteur-container img {
         width: 32px;
         height: 32px;
+        margin-right: -18%;
     }
 
     .auteur-item {
         display: flex;
         align-items: center;
+        padding-right: 20px;
+        margin-left: 25%;
     }
 }

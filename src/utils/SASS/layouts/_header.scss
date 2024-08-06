@@ -20,6 +20,26 @@
     margin-right: 25px;
 }
 
+#accueil {
+    text-decoration: underline;
+}
+
+#apropos {
+    text-decoration: none;
+}
+
+#apropos.active {
+    text-decoration: underline;
+}
+
+#accueil.active {
+    text-decoration: underline;
+}
+
+#apropos.active > #accueil {
+    text-decoration: none;
+}
+
 @media (min-width: 320px) and (max-width: 767.98px) {
     .image_header {
         width: 30%;
