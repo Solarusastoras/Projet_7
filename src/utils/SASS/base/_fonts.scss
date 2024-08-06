@@ -63,7 +63,7 @@ i .title_apparts {
         font-size: 13px;
     }
 
-    .auteur-container {
+    .auteur-container, .texteApropos {
         font-size: 12px;
     }
 
@@ -82,7 +82,9 @@ i .title_apparts {
     .tags, .depliantApropos {
         font-weight: bold;
     }
-
+    .title_apparts {
+        font-weight: normal;
+    }
    
 
 }

@@ -1,14 +1,13 @@
 .logements {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 60px;
-  margin-left: 50px;
   margin-top: 50px;
 }
 
 .card {
-  max-width: 340px;
-  box-sizing: border-box;
+  width: 340px;
   height: 340px;
 }
 
@@ -30,37 +29,31 @@
 }
 
 @media (min-width: 320px) and (max-width: 767.98px) {
-  .logements {
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-top: 9%;
+  .card-cover {
+    width: 98%;
+    height: 74%;
+    margin-top: -150px;
   }
 
   .card {
-    width: 110%;
+    width: 100%;
     height: 255px;
-    margin-bottom: -40px;
-    margin-top: 22px;
-    margin-left: 9%;
   }
 
-  .card-cover {
-    width: 110%;
-    object-fit: cover;
-    border-radius: 10px;
+  .logements {
+    gap: 1px;
+    margin-left: -2px;
+  }
+
+  .card_ctn {
+    margin-bottom: -259px;
   }
 
   .card-title {
-    position: relative;
-    top: -29%;
-    background: linear-gradient(to bottom, rgba(211, 211, 211, 1.2), rgba(211, 211, 211, 0.2));
+    top: -24%;
     height: 50px;
-    filter: brightness(300%);
-    font-weight: bold;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    width: 98%;
+    width: 95%;
+    padding-left: 10px;
+    padding-top: 10px;
   }
 }

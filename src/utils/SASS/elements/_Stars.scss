@@ -1,7 +1,7 @@
 .star-rating {
     display: flex;
     font-size: 250%;
-    margin-top: -14px;
+    margin-top: -18px;
 }
 
 .star,
@@ -18,9 +18,13 @@
 }
 
 .star-rating {
-    margin-top: -80px;
-    margin-left: 10%;
+    margin-left: 7%;
+    margin-top: -24%;
 }
 
+.mobile_stars_auteur {
+    display: block;
+    margin-top: 0px;
+}
 
 }

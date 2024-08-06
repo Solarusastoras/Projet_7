@@ -27,7 +27,7 @@ const Auteur = () => {
   }
 
   return (
-    <div className="auteur-container">
+    <div className="auteur-container - mobile_stars_auteur">
       <Auteurs name={logement.host.name} picture={logement.host.picture} />
     </div>
   );

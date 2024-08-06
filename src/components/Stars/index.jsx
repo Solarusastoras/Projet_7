@@ -44,7 +44,7 @@ const Stars = () => {
   }
 
   return (
-    <div className="rating">
+    <div className="rating - mobile_stars_auteur">
       <div key={logement.id} className="stars">
         <StarRating rating={logement.rating} />
       </div>
