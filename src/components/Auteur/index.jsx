@@ -4,10 +4,10 @@ import "../../utils/SASS/elements/_Auteur.scss";
 import "../../utils/SASS/base/_colors.scss";
 import "../../utils/SASS/base/_fonts.scss";
 
-const Auteurs = ({ name, picture }) => (
+const Auteurs = ({ name, picture, nameClass, pictureClass }) => (
   <div className="auteur-item">
-    <p className="auteur">{name}</p>
-    <img src={picture} alt={name} className="picture" />
+    <p className={nameClass}>{name}</p>
+    <img src={picture} alt={name} className={pictureClass} />
   </div>
 );
 
@@ -27,8 +27,13 @@ const Auteur = () => {
   }
 
   return (
-    <div className="auteur-container - mobile_stars_auteur">
-      <Auteurs name={logement.host.name} picture={logement.host.picture} />
+    <div className="auteur-container">
+      <Auteurs
+        name={logement.host.name}
+        nameClass="auteur-name-class"
+        picture={logement.host.picture}
+        pictureClass="auteur-picture-class"
+      />
     </div>
   );
 };

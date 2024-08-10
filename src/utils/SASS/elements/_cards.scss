@@ -7,8 +7,8 @@
 }
 
 .card {
-  width: 340px;
-  height: 340px;
+  width: 23.6vw;
+  height: 23.6vw;
 }
 
 .card-cover {
@@ -28,16 +28,28 @@
   border-radius: 10px;
 }
 
-@media (min-width: 320px) and (max-width: 767.98px) {
+.card_ctn {
+  margin-bottom: 50px;
+  border-radius: 25px;
+  gap: 1px;
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-top: 110px;
+  height: auto;
+  display: grid;
+  padding-bottom: 46px;
+}
+
+@media (min-width: 375px) and (max-width: 767.98px) {
   .card-cover {
     width: 100%;
     height: 74%;
-    margin-top: -150px;
   }
 
   .card {
     width: 100%;
     height: 255px;
+    margin-bottom: -40px;
   }
 
   .logements {
@@ -46,7 +58,8 @@
   }
 
   .card_ctn {
-    margin-bottom: -259px;
+    margin-bottom: -45px;
+    margin-top: -60px;
   }
 
   .card-title {

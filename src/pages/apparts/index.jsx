@@ -53,33 +53,30 @@ function Apparts() {
   }
 
   return (
-    <div>
+    <>
       <div className="gallery">
         <Carousel logementId={logement.id} />
       </div>
 
-      <div>
-        <div className="ligne_appart">
-          <TitreLieux logementId={logement.id} />
-          <Auteur logementId={logement.id} />
-        </div>
-        <div className="ligne_appart">
-          <Tags className="tag" logementId={logement.id} />
-          <Stars className="stars" logementId={logement.id} />
-        </div>
-        <div>
-          <LogementDetails logementId={logement.id} />
-          <ToggleSectionbis title="Équipements">
-            <ul>
-              {logement.equipments.map((equipment, index) => (
-                <li key={index}>{equipment}</li>
-              ))}
-            </ul>
-          </ToggleSectionbis>
-        </div>
+      <TitreLieux logementId={logement.id} />
+      <Auteur logementId={logement.id} />
+
+      <div className="ligne_tag_stars">
+        <Tags className="tag" logementId={logement.id} />
+        <Stars className="stars" logementId={logement.id} />
       </div>
-    </div>
+
+      <div>
+        <LogementDetails logementId={logement.id} />
+        <ToggleSectionbis title="Équipements">
+          <ul>
+            {logement.equipments.map((equipment, index) => (
+              <li key={index}>{equipment}</li>
+            ))}
+          </ul>
+        </ToggleSectionbis>
+      </div>
+    </>
   );
 }
-
 export default Apparts;

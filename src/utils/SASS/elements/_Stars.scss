@@ -1,7 +1,6 @@
 .star-rating {
     display: flex;
     font-size: 250%;
-    margin-top: -18px;
 }
 
 .star,
@@ -10,16 +9,20 @@
     height: 24px;
 }
 
-@media (min-width: 320px) and (max-width: 767.98px) {
+.rating {
+    position: absolute;
+    right: 7%;
+}
+
+@media (min-width: 375px) and (max-width: 767.98px) {
     .star,
     .star_selection {
         width: 18px;
         height: 18px;
     }
 
-    .star-rating {
+    .rating {
         position: absolute;
         left: 6%;
-        margin-top: 0%;
     }
 }

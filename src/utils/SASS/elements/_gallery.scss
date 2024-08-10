@@ -25,10 +25,12 @@
 }
 
 .banner {
-    margin-left: 7%;
     width: 87%;
     min-height: 415px;
     position: relative;
+    left: 6.5%;
+    display: flex;
+    justify-content: center;
 
     .caption {
         position: absolute;
@@ -49,7 +51,7 @@
     .banner-img {
         min-width: 103%;
         height: 255px !important;
-        margin-left: -2%;
+        border-radius: 10px !important;
     }
 
     .arrow_left,

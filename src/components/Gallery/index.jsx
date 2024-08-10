@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback } from "react";
+import React, { useEffect, useState } from "react";
 import "../../utils/SASS/base/_colors.scss";
 import "../../utils/SASS/base/_fonts.scss";
 import "../../utils/SASS/elements/_gallery.scss";
@@ -9,36 +9,18 @@ const Carousel = ({ logementId }) => {
   const [indexActuel, setIndexActuel] = useState(0);
 
   useEffect(() => {
-    // Trouver le logement par ID et charger ses images
     const logement = logements.find((logement) => logement.id === logementId);
     if (logement) {
       setPictures(logement.pictures);
     }
   }, [logementId]);
 
-  const mettreAJourCarousel = useCallback(() => {
-    if (pictures.length === 0) return;
-
-    // Image affichée
-    let elementImage = document.querySelector(".banner-img");
-    let urlImageActuelle = pictures[indexActuel];
-    elementImage.src = urlImageActuelle;
-
-    // Dots
-    let dots = document.querySelectorAll(".dot");
-    dots.forEach((dot, index) => {
-      dot.classList.remove("dot_selected");
-      if (index === indexActuel) {
-        dot.classList.add("dot_selected");
-      }
-    });
-  }, [pictures, indexActuel]);
-
   useEffect(() => {
     if (pictures.length > 0) {
-      mettreAJourCarousel();
+      const elementImage = document.querySelector(".banner-img");
+      elementImage.src = pictures[indexActuel];
     }
-  }, [indexActuel, pictures, mettreAJourCarousel]);
+  }, [indexActuel, pictures]);
 
   const handleLeftArrowClick = () => {
     setIndexActuel((prevIndex) =>
@@ -52,16 +34,12 @@ const Carousel = ({ logementId }) => {
     );
   };
 
-  const handleDotClick = (index) => {
-    setIndexActuel(index);
-  };
-
   return (
     <div id="carousel">
       <div className="banner">
         <img
           className="banner-img"
-          src={pictures[indexActuel]?.url}
+          src={pictures[indexActuel]}
           alt="carousel"
         />
         <div className="caption">{pictures[indexActuel]?.caption}</div>
@@ -77,8 +55,7 @@ const Carousel = ({ logementId }) => {
       <div className="chiffre">
         {indexActuel + 1}/{pictures.length}
       </div>
-
-      </div>
+    </div>
   );
 };
 

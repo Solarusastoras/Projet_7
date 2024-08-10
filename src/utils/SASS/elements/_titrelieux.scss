@@ -1,25 +1,23 @@
-.title_apparts,
-.localisation {
-    margin-left: 12%;
-}
-
 .title_apparts {
+    min-width: 90%;
+    margin-left: 7%;
     margin-top: 50px;
-    margin-bottom: 13px;
 }
 
 .localisation {
     margin-bottom: 50px;
+    margin-top: -20px;
+    margin-left: 7%;
 }
 
-@media (min-width: 320px) and (max-width: 767.98px) {
-    .title_apparts {
-        margin-top: -90px;
-    }
-
+@media (min-width: 375px) and (max-width: 767.98px) {
     .title_apparts,
     .localisation {
-        margin-left: 9%;
+        margin-top: -100px;
+        max-width: 70%;
+    }
 
+    .localisation {
+        margin-top: -75px;
     }
 }

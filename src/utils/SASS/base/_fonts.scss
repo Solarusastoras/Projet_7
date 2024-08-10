@@ -1,40 +1,73 @@
+// _variables.scss
+$font-family: "Montserrat", sans-serif;
+$font-weight-bold: bold;
+$font-weight-normal: normal;
+
+// Tailles de police pour les écrans de bureau
+$font-sizes: (
+    h1-error: 288px,
+    position-titre: 3rem,
+    text-error: 36px,
+    title-apparts: 2.5vw,
+    nav-header: 24px,
+    depliant-apropos: 24px,
+    texte-apropos: 20px,
+    general: 18px,
+    tags: 14px
+);
+
+// Tailles de police pour les écrans mobiles
+$font-sizes-mobile: (
+    nav-header: 12px,
+    position-titre: 24px,
+    text-error: 18px,
+    title-apparts: 18px,
+    card-title: 16px,
+    depliant-apropos: 13px,
+    texte-apropos: 12px,
+    accueil-error: 14px,
+    tags: 10px,
+    h1-error: 99px
+);
+
 body {
-    font-family: "Montserrat", sans-serif;
+    font-family: $font-family;
 }
 
 .h1_error {
-    font-size: 288px;
+    font-size: map-get($font-sizes, h1-error);
 }
 
 .home_text .position_titre {
-    font-size: 3rem;
+    font-size: map-get($font-sizes, position-titre);
 }
 
 .text_Error {
-    font-size: 36px;
+    font-size: map-get($font-sizes, text-error);
 }
-i .title_apparts {
-    font-size: 1.8rem;
+
+.title_apparts {
+    font-size: map-get($font-sizes, title-apparts);
 }
 
 .nav_header,
 .depliantApropos {
-    font-size: 24px;
+    font-size: map-get($font-sizes, nav-header);
 }
 
 .texteApropos {
-    font-size: 20px;
+    font-size: map-get($font-sizes, texte-apropos);
 }
 
 .auteur-container,
 .card-title,
 .logements,
 .accueil_error {
-    font-size: 18px;
+    font-size: map-get($font-sizes, general);
 }
 
 .tags {
-    font-size: 14px;
+    font-size: map-get($font-sizes, tags);
 }
 
 .card-title,
@@ -43,53 +76,55 @@ i .title_apparts {
 .home_text,
 .chiffre,
 .tags {
-    font-weight: bold;
+    font-weight: $font-weight-bold;
 }
 
-@media (min-width: 320px) and (max-width: 767.98px) {
+@media (min-width: 375px) and (max-width: 767.98px) {
     .nav_header {
-        font-size: 12px;
+        font-size: map-get($font-sizes-mobile, nav-header);
     }
 
     .home_text .position_titre {
-        font-size: 24px;
+        font-size: map-get($font-sizes-mobile, position-titre);
     }
 
     .title_apparts,
     .text_Error {
-        font-size: 18px;
+        font-size: map-get($font-sizes-mobile, text-error);
     }
 
     .card-title {
-        font-size: 16px;
+        font-size: map-get($font-sizes-mobile, card-title);
     }
 
     .depliantApropos {
-        font-size: 13px;
+        font-size: map-get($font-sizes-mobile, depliant-apropos);
     }
 
     .auteur-container,
     .texteApropos {
-        font-size: 12px;
+        font-size: map-get($font-sizes-mobile, texte-apropos);
     }
 
     .accueil_error {
-        font-size: 14px;
+        font-size: map-get($font-sizes-mobile, accueil-error);
     }
 
     .tags {
-        font-size: 10px;
+        font-size: map-get($font-sizes-mobile, tags);
     }
 
     .h1_error {
-        font-size: 99px;
+        font-size: map-get($font-sizes-mobile, h1-error);
     }
 
     .tags,
     .depliantApropos {
-        font-weight: bold;
+        font-weight: $font-weight-bold;
     }
-    .title_apparts {
-        font-weight: normal;
+
+    .title_apparts,
+    .localisation {
+        font-weight: $font-weight-normal;
     }
 }

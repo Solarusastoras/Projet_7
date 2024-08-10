@@ -13,7 +13,10 @@ function Home() {
         src={imageIndex}
         alt="Mer et cote rocheuse"
       />
-      <h1 className="position_titre">Chez vous, partout et ailleurs</h1>
+      <h1 className="position_titre">
+        Chez vous,
+        <br /> partout et ailleurs
+      </h1>
       <div className="card_ctn">
         <Cards />
       </div>

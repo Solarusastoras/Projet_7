@@ -12,25 +12,30 @@
   margin-bottom: 139px;
 }
 
-@media (min-width: 320px) and (max-width: 767.98px) {
+a {
+  cursor: pointer;
+}
+
+.text_Error br {
+  display: none;
+}
+
+@media (min-width: 375px) and (max-width: 767.98px) {
   .centre_error {
-    margin-top: 113px;
+    margin-top: 93px;
+    text-align: center;
+  }
+
+  .h1_error,
+  .text_Error,
+  .accueil_error {
+    margin-bottom: 113px;
   }
 
   .text_Error {
-    margin-left: 25%;
-    padding-right: 1%;
-    position: relative;
-
-    &::after {
-      content: "vous demandez n'existe pas.";
-      display: block;
-      margin-left: -6%;
-    }
+    width: auto;
   }
-
-  .accueil_error {
-    margin-top: 0;
-    margin-bottom: 63px;
+  .text_Error br {
+    display: block;
   }
 }

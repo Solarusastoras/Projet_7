@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logoHeader from "../../utils/Images/logoHeader.png";
+import logoHeader from "../../utils/Images/LOGO Kasa.svg";
 import "../../utils/SASS/layouts/_header.scss";
 import { Link } from "react-router-dom";
 import "../../utils/SASS/base/_colors.scss";

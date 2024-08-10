@@ -7,7 +7,7 @@ $fiveth-color: #e3e3e3;
 // color
 .card-title,
 .tags,
-.background_b,
+footer,
 .depliantApropos,
 .home_text .position_titre,
 .chiffre,
@@ -39,9 +39,14 @@ $fiveth-color: #e3e3e3;
 
 // background
 
-.background_b {
+footer {
     background-color: $secondary-color;
 }
+
+footer img {
+    filter: invert(0%) brightness(300%) saturate(0%);
+}
+
 .tags,
 .depliantApropos {
     background-color: $third-color;
@@ -60,7 +65,7 @@ $fiveth-color: #e3e3e3;
     filter: invert(86%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(91%) contrast(86%);
 }
 
-@media (min-width: 320px) and (max-width: 767.98px) {
+@media (min-width: 375px) and (max-width: 767.98px) {
     .card_ctn {
         background-color: $base-color;
     }

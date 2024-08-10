@@ -1,14 +1,9 @@
-.ligne_appart {
+.ligne_tag_stars {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-right: 7%;
 }
 
-
-@media (min-width: 320px) and (max-width: 767.98px) {
+@media (min-width: 375px) and (max-width: 767.98px) {
     .ligne_appart {
-        justify-content: left;
+        flex-direction: column;
     }
-
 }

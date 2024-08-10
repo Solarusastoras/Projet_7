@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
-    margin: 0px 0% 2% 7%;
+    margin: 1% 0% 3% 7%;
 }
 
 .tags {
@@ -12,17 +12,16 @@
     border-radius: 10px;
 }
 
-
-@media (min-width: 320px) and (max-width: 767.98px) {
+@media (min-width: 375px) and (max-width: 767.98px) {
     .tag_line {
-        margin: -40px 0px 90px 4%;
-        gap: 1px;
+        margin: -40px 0px 90px 6%;
+        gap: 5px;
     }
 
     .tags {
         width: auto;
         max-height: 18px !important;
-        margin-left: 10px;
+        margin-left: auto;
         border-radius: 5px;
     }
 }

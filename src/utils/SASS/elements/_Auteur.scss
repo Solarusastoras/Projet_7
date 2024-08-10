@@ -1,39 +1,26 @@
 .auteur-container {
-    position: relative;
-    margin-top: 5.5%;
-    right: 0%;
+    margin-top: -105px;
+    display: block;
+    position: absolute;
+    right: 14%;
 }
 
 .auteur-container img {
-    width: 64px;
-    height: 64px;
+    width: clamp(45px, 4.4vw, 64px);
     border-radius: 50%;
 }
-
 .auteur-item {
     display: flex;
     align-items: center;
+    max-width: 20px;
+    gap: 10px;
 }
 
-.auteur {
-    margin-right: 10px;
-    text-align: left;
-}
-
-.auteur {
-    justify-content: center;
-}
-
-@media (min-width: 320px) and (max-width: 767.98px) {
-    .auteur-container {
-        position: absolute;
-        top: 83%;
-    }
-
+@media (min-width: 375px) and (max-width: 767.98px) {
     .auteur-container img {
         width: 32px;
         height: 32px;
-        margin-right: -18%;
+        margin-top: 20px;
     }
 
     .auteur-item {
@@ -41,5 +28,10 @@
         align-items: center;
         padding-right: 20px;
         margin-left: 25%;
+    }
+
+    .auteur-container {
+        margin-top: 0;
+        right: 22%;
     }
 }

@@ -24,25 +24,20 @@
     text-decoration: underline;
 }
 
-#apropos {
-    text-decoration: none;
+.nav_header .accueil,
+.nav_header .apropos {
+  text-decoration: none;
+  color: black;
+  padding-bottom: 5px;
 }
 
-#apropos.active {
-    text-decoration: underline;
+.nav_header .active {
+  text-decoration: underline;
 }
 
-#accueil.active {
-    text-decoration: underline;
-}
-
-#apropos.active > #accueil {
-    text-decoration: none;
-}
-
-@media (min-width: 320px) and (max-width: 767.98px) {
+@media (min-width: 375px) and (max-width: 767.98px) {
     .image_header {
-        width: 30%;
+        width: 40%;
         height: 47px;
         margin-top: 20px;
     }
