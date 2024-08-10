@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import logements from "../../data_apparts/logements.json";
 import "../../utils/SASS/elements/_cards.scss";
@@ -10,7 +10,7 @@ const Card = ({ id, cover, title, setClickedId }) => {
 
   const handleClick = () => {
     setClickedId(id);
-    localStorage.setItem("clickedId", id); 
+    localStorage.setItem("clickedId", id);
     navigate(`/apparts`);
   };
 

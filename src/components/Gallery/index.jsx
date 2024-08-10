@@ -3,6 +3,8 @@ import "../../utils/SASS/base/_colors.scss";
 import "../../utils/SASS/base/_fonts.scss";
 import "../../utils/SASS/elements/_gallery.scss";
 import logements from "../../data_apparts/logements.json";
+import VectorLeftMax from "../../utils/Images/VectorLeftMax.svg";
+import VectorRightMax from "../../utils/Images/VectorRightMax.svg";
 
 const Carousel = ({ logementId }) => {
   const [pictures, setPictures] = useState([]);
@@ -36,22 +38,17 @@ const Carousel = ({ logementId }) => {
 
   return (
     <div id="carousel">
-      <div className="banner">
-        <img
-          className="banner-img"
-          src={pictures[indexActuel]}
-          alt="carousel"
-        />
-        <div className="caption">{pictures[indexActuel]?.caption}</div>
-      </div>
-      <div className="alignement_arrow">
+      <div className="arrow">
         <div className="arrow_left" onClick={handleLeftArrowClick}>
-          {"<"}
+          <img src={VectorLeftMax} alt="Left Arrow" />
         </div>
         <div className="arrow_right" onClick={handleRightArrowClick}>
-          {">"}
+          <img src={VectorRightMax} alt="Right Arrow" />
         </div>
       </div>
+
+      <img className="banner-img" src={pictures[indexActuel]} alt="carousel" />
+
       <div className="chiffre">
         {indexActuel + 1}/{pictures.length}
       </div>

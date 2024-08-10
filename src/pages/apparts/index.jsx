@@ -58,8 +58,10 @@ function Apparts() {
         <Carousel logementId={logement.id} />
       </div>
 
-      <TitreLieux logementId={logement.id} />
-      <Auteur logementId={logement.id} />
+      <div className="alignement_titre_auteur">
+        <TitreLieux logementId={logement.id} />
+        <Auteur logementId={logement.id} />
+      </div>
 
       <div className="ligne_tag_stars">
         <Tags className="tag" logementId={logement.id} />

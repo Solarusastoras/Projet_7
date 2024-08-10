@@ -11,7 +11,7 @@
 
 .rating {
     position: absolute;
-    right: 7%;
+    right: 8.5vw;
 }
 
 @media (min-width: 375px) and (max-width: 767.98px) {
@@ -24,5 +24,6 @@
     .rating {
         position: absolute;
         left: 6%;
+        margin-top: 30px;
     }
 }

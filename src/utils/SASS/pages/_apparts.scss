@@ -1,9 +1,30 @@
+#root {
+    height: auto;
+    width: auto;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+}
+
+.alignement_titre_auteur {
+    display: flex;
+    margin: 50px 7% 50px 7%;
+}
+
 .ligne_tag_stars {
     display: flex;
 }
 
 @media (min-width: 375px) and (max-width: 767.98px) {
-    .ligne_appart {
-        flex-direction: column;
+    .gallery {
+        display: flex;
+        justify-content: center;
+        margin-left: -2%;
+    }
+
+    .alignement_titre_auteur {
+        display: initial;
     }
 }
