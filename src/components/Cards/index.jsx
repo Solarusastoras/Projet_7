@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import logements from "../../data_apparts/logements.json";
 import "../../utils/SASS/elements/_cards.scss";
 import "../../utils/SASS/base/_colors.scss";
@@ -24,6 +24,34 @@ const Card = ({ id, cover, title, setClickedId }) => {
 
 function Cards() {
   const [clickedId, setClickedId] = useState(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    const handleCardClick = () => {
+      const cardSelect = document.querySelector('a[href="/"]');
+      if (cardSelect) {
+        cardSelect.classList.remove("active");
+      }
+    };
+
+    const cards = document.querySelectorAll(".card");
+    cards.forEach((card) => {
+      card.addEventListener("click", handleCardClick);
+    });
+
+    return () => {
+      cards.forEach((card) => {
+        card.removeEventListener("click", handleCardClick);
+      });
+    };
+  }, []);
+
+  useEffect(() => {
+    const accueilLink = document.querySelector('nav a[href="/"]');
+    if (accueilLink) {
+      accueilLink.classList.remove("active");
+    }
+  }, [location.pathname]);
 
   return (
     <div className="logements">
