@@ -12,7 +12,7 @@ import LogementDetails from "../../components/Description";
 import logements from "../../data_apparts/logements.json";
 import "../../utils/SASS/base/_colors.scss";
 import "../../utils/SASS/base/_fonts.scss";
-import Header from "../../components/Header";
+
 
 
 const ToggleSectionbis = ({ title, children }) => {
