@@ -25,20 +25,27 @@ ul {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-bottom: 0;
+        margin-bottom: -19px;
     }
 
     .barre_appart {
         max-width: 90%;
-        margin: 0 5% -15px 5%;
+        margin: 0 5% 5%;
     }
 
     .text_description {
         margin-right: 5%;
+        margin-top: -20px;
+        margin-bottom: 20px;
     }
 
     ul {
         margin-left: -30%;
-        margin-bottom: 40px;
+        padding-bottom: -10px;
+        margin-top: -10px;
+    }
+
+    .marge_description {
+        margin-top: -19px;
     }
 }

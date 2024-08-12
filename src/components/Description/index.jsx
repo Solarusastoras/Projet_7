@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import logements from "../../data_apparts/logements.json";
-import Depliant from "../../components/Drop_down"; // Chemin mis à jour
+import Depliant from "../../components/Drop_down";
 import "../../utils/SASS/base/_colors.scss";
 import "../../utils/SASS/base/_fonts.scss";
 import "../../utils/SASS/elements/_description.scss";

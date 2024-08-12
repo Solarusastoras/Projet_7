@@ -1,7 +1,7 @@
 .image_apropos {
     width: 90%;
     height: 223px;
-    margin-top: 50px;
+    margin-top: 38px;
     margin-left: 5%;
     border-radius: 25px;
     object-fit: cover;
@@ -12,7 +12,6 @@
 
 .depliantApropos {
     height: 52px;
-    margin-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -22,10 +21,7 @@
 
 .texteApropos {
     height: auto;
-    padding-bottom: 20px;
     margin-top: -30px;
-    margin-left: 0%;
-    margin-bottom: 30px;
     padding-top: 30px;
     padding-left: 18px;
     text-align: justify;
@@ -38,6 +34,7 @@
 .taille_depliant_apropos {
     width: 75%;
     margin-left: 12%;
+    margin-bottom: 38px;
 }
 
 .texteApropos::after {
@@ -56,8 +53,20 @@ header {
         margin-left: 5%;
     }
 
-    .texteApropos {
+    .image_apropos {
         margin-bottom: 19px;
-        padding-top: 12px;
+    }
+
+    .texteApropos {
+        margin-top: 0px;
+        padding-bottom: 19px;
+    }
+
+    .depliantApropos {
+        height: 30px;
+    }
+
+    .taille_depliant_apropos {
+        margin-bottom: -19px;
     }
 }

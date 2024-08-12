@@ -10,7 +10,6 @@ const Depliant = ({ title, iconDown, iconUp, children }) => {
   const toggle = () => {
     setIsOpen(!isOpen);
     setClicked(true);
-    setTimeout(() => setClicked(false), 600);
   };
 
   return (
@@ -25,8 +24,10 @@ const Depliant = ({ title, iconDown, iconUp, children }) => {
               width: "16px",
               height: "16px",
               filter: "invert(100%)",
-              marginRight: "25px",
+              marginRight: "15px",
               cursor: "pointer",
+              zIndex: "20",
+              padding: "-5px",
             }}
             onClick={toggle}
           />

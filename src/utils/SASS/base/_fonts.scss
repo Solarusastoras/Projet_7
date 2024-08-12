@@ -5,13 +5,13 @@ $font-weight-normal: normal;
 
 // Tailles de police pour les écrans de bureau
 $font-sizes: (
-    h1-error: 288px,
-    position-titre: 3rem,
-    text-error: 36px,
+    h1-error: 20vw,
+    position-titre: 3.33rem,
+    text-error: 2.5vw,
     title-apparts: 2.5vw,
     nav-header: 24px,
     depliant-apropos: 24px,
-    texte-apropos: 20px,
+    texte-apropos: 1.389vw,
     general: 18px,
     tags: 14px
 );
@@ -79,6 +79,10 @@ body {
     font-weight: $font-weight-bold;
 }
 
+.auteur-name-class {
+    text-align: end;
+}
+
 @media (min-width: 375px) and (max-width: 767.98px) {
     .nav_header {
         font-size: map-get($font-sizes-mobile, nav-header);
@@ -88,7 +92,6 @@ body {
         font-size: map-get($font-sizes-mobile, position-titre);
     }
 
-    .title_apparts,
     .text_Error {
         font-size: map-get($font-sizes-mobile, text-error);
     }
@@ -106,7 +109,8 @@ body {
         font-size: map-get($font-sizes-mobile, texte-apropos);
     }
 
-    .accueil_error {
+    .accueil_error,
+    .localisation {
         font-size: map-get($font-sizes-mobile, accueil-error);
     }
 
@@ -123,8 +127,8 @@ body {
         font-weight: $font-weight-bold;
     }
 
-    .title_apparts,
-    .localisation {
+    .title_apparts {
         font-weight: $font-weight-normal;
+        font-size: map-get($font-sizes-mobile, title-apparts);
     }
 }
