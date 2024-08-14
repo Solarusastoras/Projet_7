@@ -11,8 +11,11 @@ ul {
     padding-right: 10px;
     margin-top: 20px;
 }
+
 .text_description {
     margin-top: 20px;
+    padding-top: 10%;
+    padding-bottom: 30px;
 }
 
 .ligne_apparts {
@@ -25,7 +28,6 @@ ul {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-bottom: -19px;
     }
 
     .barre_appart {
@@ -35,17 +37,16 @@ ul {
 
     .text_description {
         margin-right: 5%;
+        margin-bottom: auto;
         margin-top: -20px;
-        margin-bottom: 20px;
     }
 
     ul {
-        margin-left: -30%;
         padding-bottom: -10px;
         margin-top: -10px;
     }
 
-    .marge_description {
-        margin-top: -19px;
+    .marge_description ul {
+        padding-top: 20px;
     }
 }

@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import "../../utils/SASS/pages/_apropos.scss";
 import Depliant from "../../components/Drop_down";
 import imageIndex from "../../utils/Images/bcktop2.png";
-import iconUp from "../../utils/Images/chevron-up-solid.svg";
-import iconDown from "../../utils/Images/chevron-down-solid.svg";
 import "../../utils/SASS/base/_colors.scss";
 import "../../utils/SASS/base/_fonts.scss";
+import iconUp from "../../utils/Images/chevron-up-solid.svg";
+import iconDown from "../../utils/Images/chevron-down-solid.svg";
 
 const ToggleSection = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,6 +35,7 @@ function Apropos() {
         src={imageIndex}
         alt="une coligne avec vu sur les montagnes"
       />
+      <div className="alignement_vertical">
       <ToggleSection title="Fiabilité">
         Les annonces postées sur Kasa garantissent une fiabilité totale. Les
         photos sont conformes aux logements, et toutes les informations sont
@@ -58,6 +59,7 @@ function Apropos() {
         bien respectés. Nous organisons également des ateliers sur la sécurité
         domestique pour nos hôtes.
       </ToggleSection>
+      </div>
     </div>
   );
 }

@@ -6,10 +6,10 @@ $font-weight-normal: normal;
 // Tailles de police pour les écrans de bureau
 $font-sizes: (
     h1-error: 20vw,
-    position-titre: 3.33rem,
+    position-titre: 3.33vw,
     text-error: 2.5vw,
     title-apparts: 2.5vw,
-    nav-header: 24px,
+    header-ul-li: 24px,
     depliant-apropos: 24px,
     texte-apropos: 1.389vw,
     general: 18px,
@@ -18,7 +18,7 @@ $font-sizes: (
 
 // Tailles de police pour les écrans mobiles
 $font-sizes-mobile: (
-    nav-header: 12px,
+    header-ul-li: 12px,
     position-titre: 24px,
     text-error: 18px,
     title-apparts: 18px,
@@ -32,6 +32,12 @@ $font-sizes-mobile: (
 
 body {
     font-family: $font-family;
+}
+
+header {
+    a {
+        font-size: map-get($font-sizes, header-ul-li);
+    }
 }
 
 .h1_error {
@@ -50,12 +56,12 @@ body {
     font-size: map-get($font-sizes, title-apparts);
 }
 
-.nav_header,
 .depliantApropos {
-    font-size: map-get($font-sizes, nav-header);
+    font-size: map-get($font-sizes, header-ul-li);
 }
 
-.texteApropos {
+.texteApropos,
+.text_description {
     font-size: map-get($font-sizes, texte-apropos);
 }
 
@@ -83,9 +89,15 @@ body {
     text-align: end;
 }
 
+.text_description {
+    text-align: left;
+}
+
 @media (min-width: 375px) and (max-width: 767.98px) {
-    .nav_header {
-        font-size: map-get($font-sizes-mobile, nav-header);
+    header {
+        a {
+            font-size: map-get($font-sizes-mobile, header-ul-li);
+        }
     }
 
     .home_text .position_titre {
@@ -104,8 +116,9 @@ body {
         font-size: map-get($font-sizes-mobile, depliant-apropos);
     }
 
-    .auteur-container,
-    .texteApropos {
+    .auteur-name-class,
+    .texteApropos,
+    .text_description {
         font-size: map-get($font-sizes-mobile, texte-apropos);
     }
 

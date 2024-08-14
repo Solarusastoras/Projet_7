@@ -16,9 +16,10 @@ footer,
     color: $base-color;
 }
 
-.nav_header {
+header {
     a {
         color: $secondary-color;
+        text-decoration: none;
     }
 }
 

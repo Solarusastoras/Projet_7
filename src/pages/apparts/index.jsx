@@ -13,8 +13,6 @@ import logements from "../../data_apparts/logements.json";
 import "../../utils/SASS/base/_colors.scss";
 import "../../utils/SASS/base/_fonts.scss";
 
-
-
 const ToggleSectionbis = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
   const togglebis = () => setIsOpen(!isOpen);

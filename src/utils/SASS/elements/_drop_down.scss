@@ -22,7 +22,7 @@ $opacity-closed: 0;
 
 // Animations
 @include slide-animation(slide-bottom, -50%, 0, $opacity-closed, $opacity-open);
-@include slide-animation(slide-top, 0%, -50%, $opacity-open, $opacity-closed);
+@include slide-animation(slide-top, 0, -50%, $opacity-open, $opacity-closed);
 
 // Styles
 .texteApropos {
@@ -32,6 +32,7 @@ $opacity-closed: 0;
     transition:
         max-height $duration $ease-out,
         opacity $duration $ease-out;
+    margin: 0;
 }
 
 .texteApropos.open {
@@ -46,4 +47,5 @@ $opacity-closed: 0;
     opacity: $opacity-closed;
     animation: slide-top $duration forwards;
     overflow: hidden;
+    margin: 0;
 }
