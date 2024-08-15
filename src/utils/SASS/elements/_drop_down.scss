@@ -49,3 +49,9 @@ $opacity-closed: 0;
     overflow: hidden;
     margin: 0;
 }
+
+@media (min-width: 375px) and (max-width: 767.98px) {
+    .texteApropos.closed {
+        max-height: 13px;
+    }
+}
