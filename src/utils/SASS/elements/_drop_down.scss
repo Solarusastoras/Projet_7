@@ -2,7 +2,7 @@
 $duration: 0.5s;
 $ease-out: ease-in-out;
 $max-height-open: max-content;
-$max-height-closed: 0;
+$max-height-closed: 0px;
 $opacity-open: 1;
 $opacity-closed: 0;
 
@@ -48,10 +48,4 @@ $opacity-closed: 0;
     animation: slide-top $duration forwards;
     overflow: hidden;
     margin: 0;
-}
-
-@media (min-width: 375px) and (max-width: 767.98px) {
-    .texteApropos.closed {
-        max-height: 13px;
-    }
 }
