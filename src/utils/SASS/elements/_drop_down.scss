@@ -32,7 +32,6 @@ $opacity-closed: 0;
     transition:
         max-height $duration $ease-out,
         opacity $duration $ease-out;
-    margin: 0;
 }
 
 .texteApropos.open {
@@ -40,6 +39,7 @@ $opacity-closed: 0;
     opacity: $opacity-open;
     animation: slide-bottom $duration forwards;
     overflow: hidden;
+    margin-top: -25px;
 }
 
 .texteApropos.closed {
@@ -47,5 +47,10 @@ $opacity-closed: 0;
     opacity: $opacity-closed;
     animation: slide-top $duration forwards;
     overflow: hidden;
-    margin: 0;
+}
+
+@media (min-width: 320px) and (max-width: 767.98px) {
+    .texteApropos.open {
+        margin-top: 0px;
+    }
 }

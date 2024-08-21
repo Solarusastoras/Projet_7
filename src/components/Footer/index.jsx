@@ -7,7 +7,7 @@ import "../../utils/SASS/base/_fonts.scss";
 function Footer() {
   return (
     <footer>
-      <div className="footer_contenu">
+      <div className="footer_contenu -- footer_apropos">
         <img src={logoFooter} alt="Logo Footer" />
         <p>© 2020 Kasa. All rights reserved</p>
       </div>
