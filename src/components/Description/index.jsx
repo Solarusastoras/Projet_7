@@ -7,9 +7,11 @@ import "../../utils/SASS/elements/_description.scss";
 import iconUp from "../../utils/Images/chevron-up-solid.svg";
 import iconDown from "../../utils/Images/chevron-down-solid.svg";
 
+// Composant pour afficher les détails d'un logement
 const LogementDetails = () => {
   const [logement, setLogement] = useState(null);
 
+  // Utiliser useEffect pour récupérer le logement sélectionné au chargement du composant
   useEffect(() => {
     const clickedId = localStorage.getItem("clickedId");
     const foundLogement = logements.find(
@@ -18,10 +20,7 @@ const LogementDetails = () => {
     setLogement(foundLogement);
   }, []);
 
-  if (!logement) {
-    return <div>Chargement...</div>;
-  }
-
+  // Retourner les détails du logement avec les composants Depliant pour la description et les équipements
   return (
     <div className="ligne_apparts">
       <div className="barre_appart">

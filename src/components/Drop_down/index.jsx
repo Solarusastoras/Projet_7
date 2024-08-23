@@ -9,10 +9,10 @@ const Depliant = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [clicked, setClicked] = useState(false);
 
+  // Fonction pour basculer l'état d'ouverture/fermeture du dépliant
   const toggle = () => {
     setIsOpen(!isOpen);
     setClicked(true);
-    setTimeout(() => setClicked(false), 600);
   };
 
   return (
@@ -28,6 +28,7 @@ const Depliant = ({ title, children }) => {
           />
         </span>
       </h3>
+      {/* Contenu du dépliant avec une classe conditionnelle pour l'ouverture/fermeture */}
       <div className={`texteApropos ${isOpen ? "open" : "closed"}`}>
         {children}
       </div>

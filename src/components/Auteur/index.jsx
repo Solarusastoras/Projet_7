@@ -4,6 +4,7 @@ import "../../utils/SASS/elements/_Auteur.scss";
 import "../../utils/SASS/base/_colors.scss";
 import "../../utils/SASS/base/_fonts.scss";
 
+// Composant pour afficher les informations de l'auteur
 const Auteurs = ({ name, picture, nameClass, pictureClass }) => (
   <div className="auteur-item">
     <p className={nameClass}>{name}</p>
@@ -11,9 +12,11 @@ const Auteurs = ({ name, picture, nameClass, pictureClass }) => (
   </div>
 );
 
+// Composant principal pour afficher l'auteur du logement
 const Auteur = () => {
   const [logement, setLogement] = useState(null);
 
+  // Utiliser useEffect pour récupérer l'id du logement sélectionné au chargement du composant
   useEffect(() => {
     const clickedId = localStorage.getItem("clickedId");
     const foundLogement = logements.find(
@@ -22,10 +25,7 @@ const Auteur = () => {
     setLogement(foundLogement);
   }, []);
 
-  if (!logement) {
-    return <div>Chargement...</div>;
-  }
-
+  // Retourner le composant d'auteur avec les informations du logement
   return (
     <div className="auteur-container">
       <Auteurs

@@ -5,6 +5,7 @@ import "../../utils/SASS/elements/_cards.scss";
 import "../../utils/SASS/base/_colors.scss";
 import "../../utils/SASS/base/_fonts.scss";
 
+// Composant pour afficher une carte de logement
 const Card = ({ id, cover, title, setClickedId }) => {
   const navigate = useNavigate();
 
@@ -23,6 +24,7 @@ const Card = ({ id, cover, title, setClickedId }) => {
   );
 };
 
+// Composant principal pour afficher les cartes de logements
 function Cards() {
   const [clickedId, setClickedId] = useState(null);
 
@@ -34,9 +36,10 @@ function Cards() {
           id={logement.id}
           cover={logement.cover}
           title={logement.title}
-          setClickedId={setClickedId}
+          setClickedId={setClickedId} // Passer la fonction pour mettre à jour l'ID cliqué
         />
       ))}
+      {/* Afficher l'ID du logement cliqué */}
       {clickedId && <p>ID cliqué: {clickedId}</p>}
     </div>
   );
