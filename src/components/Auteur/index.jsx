@@ -25,6 +25,12 @@ const Auteur = () => {
     setLogement(foundLogement);
   }, []);
 
+  //La condition suivante vérifie si l'objet logement ou la propriété host de logement est null
+  if (!logement || !logement.host) {
+    return <div>Chargement...</div>;
+  }
+
+
   // Retourner le composant d'auteur avec les informations du logement
   return (
     <div className="auteur-container">

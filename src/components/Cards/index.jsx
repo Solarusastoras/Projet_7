@@ -36,10 +36,9 @@ function Cards() {
           id={logement.id}
           cover={logement.cover}
           title={logement.title}
-          setClickedId={setClickedId} // Passer la fonction pour mettre à jour l'ID cliqué
+          setClickedId={setClickedId}
         />
       ))}
-      {/* Afficher l'ID du logement cliqué */}
       {clickedId && <p>ID cliqué: {clickedId}</p>}
     </div>
   );

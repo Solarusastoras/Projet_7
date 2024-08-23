@@ -51,6 +51,7 @@ $opacity-closed: 0;
 
 @media (min-width: 320px) and (max-width: 767.98px) {
     .texteApropos.open {
-        margin-top: 0px;
+        margin-top: -10px;
+        margin-bottom: 6px;
     }
 }

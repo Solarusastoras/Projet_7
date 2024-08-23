@@ -20,6 +20,11 @@ const LogementDetails = () => {
     setLogement(foundLogement);
   }, []);
 
+  //La condition suivante vérifie si l'objet logement ou la propriété host de logement est null
+  if (!logement || !logement.host) {
+    return <div>Chargement...</div>;
+  }
+
   // Retourner les détails du logement avec les composants Depliant pour la description et les équipements
   return (
     <div className="ligne_apparts">
