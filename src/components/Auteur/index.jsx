@@ -30,7 +30,6 @@ const Auteur = () => {
     return <div>Chargement...</div>;
   }
 
-
   // Retourner le composant d'auteur avec les informations du logement
   return (
     <div className="auteur-container">

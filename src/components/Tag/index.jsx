@@ -20,11 +20,10 @@ const TagList = () => {
     setLogement(foundLogement);
   }, []);
 
-    //La condition suivante vérifie si l'objet logement ou la propriété host de logement est null
+  //La condition suivante vérifie si l'objet logement ou la propriété host de logement est null
   if (!logement || !logement.host) {
     return <div>Chargement...</div>;
   }
-
 
   // Retourner la liste des tags du logement
   return (
