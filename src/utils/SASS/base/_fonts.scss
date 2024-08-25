@@ -13,7 +13,8 @@ $font-sizes: (
     depliant-apropos: 24px,
     texte-apropos: 1.389vw,
     general: 18px,
-    tags: 14px
+    tags: 14px,
+    card-title: 1.289vw,
 );
 
 // Tailles de police pour les écrans mobiles
@@ -48,6 +49,9 @@ header {
     font-size: map-get($font-sizes, position-titre);
 }
 
+.card-title {
+    font-size: map-get($font-sizes, card-title);
+}
 .text_Error {
     font-size: map-get($font-sizes, text-error);
 }
@@ -66,7 +70,6 @@ header {
 }
 
 .auteur-container,
-.card-title,
 .logements,
 .accueil_error {
     font-size: map-get($font-sizes, general);
