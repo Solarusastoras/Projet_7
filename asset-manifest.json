@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Projet_7/static/css/main.9694fd87.css",
+    "main.js": "/Projet_7/static/js/main.ecf84d23.js",
+    "static/media/bcktop1.png": "/Projet_7/static/media/bcktop1.d00ae7dd3ef927bb988d.png",
+    "static/media/bcktop2.png": "/Projet_7/static/media/bcktop2.9b95ada7a30d67f2fb6c.png",
+    "static/media/LOGO Kasa.svg": "/Projet_7/static/media/LOGO Kasa.321cad97a448ce432e377a7af17a23f3.svg",
+    "index.html": "/Projet_7/index.html",
+    "static/media/star-solid.svg": "/Projet_7/static/media/star-solid.f9fff8ad696f71908237054f4c5e503e.svg",
+    "static/media/chevron-down-solid.svg": "/Projet_7/static/media/chevron-down-solid.79d81965807ebaf4751fdc49e7912b18.svg",
+    "static/media/chevron-up-solid.svg": "/Projet_7/static/media/chevron-up-solid.ebbe90c64cad53c64e4c6505c998a157.svg",
+    "static/media/VectorRightMax.svg": "/Projet_7/static/media/VectorRightMax.224e07798ade6bda6e2572adcd9fc9c3.svg",
+    "static/media/VectorLeftMax.svg": "/Projet_7/static/media/VectorLeftMax.e1c831f025531aaa34d3eb308a748ce2.svg",
+    "main.9694fd87.css.map": "/Projet_7/static/css/main.9694fd87.css.map",
+    "main.ecf84d23.js.map": "/Projet_7/static/js/main.ecf84d23.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9694fd87.css",
+    "static/js/main.ecf84d23.js"
+  ]
+}
